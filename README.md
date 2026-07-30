@@ -41,7 +41,6 @@ Pour booter le SunBlade
     
     - Root Debian pour le système final : /export/sunroot
     
-Apres l'install
 
 | Commande | Description |
 | :--- | :--- |
@@ -52,3 +51,18 @@ Apres l'install
 | `ok setenv boot-device net:dhcp` | Boot réseau par défaut |
 | `ok show-nets` | Lister les interfaces réseau |
 | `ok test net` | Tester la carte réseau |
+
+Après l'install
+
+Dans le nouveau système Debian sparc64  
+
+  - apt update && apt upgrade -y  
+  - apt install -y openssh-server sudo vim htop  
+  
+Installer SILO (bootloader SPARC)  
+
+  - apt install -y silo  
+  - silo -C /etc/silo.conf  
+  
+Il te suffit maintenant de brancher le SunBlade sur le réseau et taper boot net:dhcp à l'OBP ! 🚀
+
