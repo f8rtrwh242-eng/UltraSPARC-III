@@ -41,3 +41,14 @@ Pour booter le SunBlade
     
     - Root Debian pour le système final : /export/sunroot
     
+Apres l'install
+
+| Commande | Description |
+| :--- | :--- |
+| `ok boot net:dhcp` | Boot réseau DHCP |
+| `ok boot net` | Boot réseau RARP |
+| `ok probe-scsi` | Lister disques SCSI |
+| `ok printenv boot-device` | Voir le boot device actuel |
+| `ok setenv boot-device net:dhcp` | Boot réseau par défaut |
+| `ok show-nets` | Lister les interfaces réseau |
+| `ok test net` | Tester la carte réseau |
